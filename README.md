@@ -27,32 +27,13 @@ window-sale-app/
 
 ---
 
-## 🔐 Переменные окружения (.env)
-
-Создай файл `.env` в корне проекта и добавь туда:
-
-```env
-DB_DATABASE=DB_Zakovits
-DB_USER=postgres
-DB_PASSWORD=пароль
-DB_HOST=localhost
-DB_PORT=5432
-DB_SCHEMA=windows_sale
-DB_DIALECT=postgres
-
-SERVER_PORT=3000
-JWT_SECRET=твой_секретный_ключ
-```
-
----
-
 ## 🚀 Как запустить проект локально
 
 ### 1. Клонируй репозиторий:
 
 
 ```bash
-git clone https://github.com/zhakki/windows.git
+git clone https://github.com/zhakki/window-sale-backend.git
 cd window-sale-app
 
 ---
@@ -89,11 +70,13 @@ JWT_SECRET=secretkey
 
 CREATE DATABASE windows_sale;
 
+Пример клиента для захода
 
-
+{"email": "kaja.vaz@example.com", "password": "yourpassword", "userType": "klient"}
 
 # Синхронизация БД
 node server.js
+
 
 ## ✅ Готовые пользователи
 
